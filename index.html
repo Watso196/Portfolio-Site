@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108810047-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108810047-1');
+</script>
+<title>Kalib Watson's Portfolio</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+<link rel="icon" type="image/png" href="http://kalibwatson.com/images/kwlogofavicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--BEGIN CONTAINER-->
+<div id="container" aria-hidden="false">
+
+	<!--BEGIN HEADER-->
+	<div id="header">
+		<img src="http://kalibwatson.com/images/kwlogofinal.png" alt="Kalib Watson's Logo">
+
+		<img src="http://kalibwatson.com/images/kwbanner.png" alt="Hi, I'm Kalib Watson. Constantly
+		Curious and Persistently Passionate." title="Hi, I'm Kalib Watson. Constantly
+		Curious and Persistently Passionate."/>
+		<!--title tag fixes alt text bugs for early versions of IE and FF-->
+	</div>
+	<!--END HEADER-->
+
+	<!--BEGIN NAVBAR-->
+	<nav>
+		<ul>
+			<li><a href="/index.html">Portfolio</a></li>
+			<li><a href="/resume.html">Resume</a></li>
+			<li><a href="#contact" id="myBtn">Contact</a></li> <!--ID triggers/opens modal popup-->
+		</ul>
+	</nav>
+	<!--END NAVBAR-->
+
+	<!--BEGIN PORTFOLIO-->
+	<div id="portfolio">
+		<div id="portfolio-content">
+			<h1>My Work</h1>
+
+			<img src="http://kalibwatson.com/images/line.png" alt="">
+
+				<img class="left" src="http://kalibwatson.com/images/cavegame.jpg" alt="JavaScript game prototype image.">
+				<div class="right">
+					<h2><a href="http://kalibwatson.com/cavegame.html">JavaScript Game Prototype</a></h2>
+					<p>One of the great things about web development is the ability to be creative with our skills.
+					After an intro to JavaScript, I decided to create a JavaScript game prototype in order to better
+					learn JavaScript and test my abilities.</p>
+				</div>
+
+			<div class="clear">
+			</div>
+
+				<img class="left" src="http://kalibwatson.com/images/micoopkitchen.jpg" alt="MI Co-op Kitchen image.">
+				<div class="right">
+					<h2><a href="http://kalibwatson.com/micoopkitchen.html">MI Co-op Kitchen</a></h2>
+					<p>While at the Michigan Electric Cooperative Association, I learned a lot about managing
+					and working with Wordpress sites. MI Co-op Kitchen is a site I managed and maintained
+					myself during my time there.</p>
+				</div>
+
+			<div class="clear">
+			</div>
+
+				<img class="left" src="http://kalibwatson.com/images/sherlockian.jpg" alt="Sherlockian.net image.">
+				<div class="right">
+					<h2><a href="http://kalibwatson.com/sherlockiansite.html">Sherlockian.net Directory</a></h2>
+					<p>During college I applied for a web content manager position, having no idea what the
+					pay, hours or team would be like. After an informal meeting with the team, I was hired
+					to work on fixing 300+ broken links. See where the project is now!</p>
+				</div>
+
+			<div class="clear">
+			</div>
+
+				<img class="left" src="http://kalibwatson.com/images/scisite.jpg" alt="SCI Site Redesign image.">
+				<div class="right">
+					<h2><a href="http://kalibwatson.com/scisite.html">SCI Site Redesign</a></h2>
+					<p>When I began working for SCI Journal as their Website Designer there were some
+					changes to be made. Take a look to see how I implemented them!</p>
+				</div>
+
+			<div class="clear">
+			</div>
+		</div>
+
+	</div>
+	<!--END PORTFOLIO-->
+
+	<!--BEGIN FOOTER-->
+	<div id="footer">
+		<div class="table">
+		<ul>
+			<li><a href="https://twitter.com/CuriousWats"><img src="http://kalibwatson.com/images/icons/twittericon.png"
+			alt="twitter"/></a></li>
+			<li><a href=""><img src="http://kalibwatson.com/images/icons/linkedinicon.png" alt="linkedin"/></a></li>
+		</ul>
+
+		<p>Copyright &copy; Kalib Watson 2017</p>
+
+		</div>
+
+	</div>
+	<!--END FOOTER-->
+
+</div>
+<!--CLOSE CONTAINER DIV-->
+
+<!--BEGIN MODAL POPUP-->
+<!-- The Modal -->
+<div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="contact-header"> <!--Id is here to call JavaScript popup action, not for styling-->
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	<div class="modal-header">
+		<span class="close"><a href="#">&times;</a></span>
+		<h2 id="contact-header">Contact Me</h2>
+	</div>
+	<div class="modal-body">
+			<!--Contact form-->
+				<form action="mailto:watso196@msu.edu" method="post" enctype="text/plain">
+				<label for="name"><p>Name:</p></label>
+				<input type="text" name="name" id="name"><br />
+				<label for="email"><p>Email:</p></label>
+				<input type="email" name="email" id="email"><br />
+				<label for="message"><p>Message:</p></label>
+				<textarea name="message" id="message"></textarea></label>
+				<br  />
+				<input class="button" type="submit" value="Send">
+				<input class="button" type="reset" value="Reset">
+				</form>
+				<!--End contact form-->
+			</div>
+
+	</div>
+
+</div>
+<!--END MODAL POPUP-->
+
+
+<!--JavaScript-->
+<script src="http://kalibwatson.com/js/pop-up.js"></script> <!--Scripts are included at the bottom of the
+page so they don't effect the content load time-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>

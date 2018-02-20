@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>JavaScript Canvas Game Prototype | Kalib Watson's Portfolio</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+<link rel="icon" type="image/png" href="http://kalibwatson.com/images/kwlogofavicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--BEGIN CONTAINER-->
+<div id="container">
+
+	<!--BEGIN PORTFOLIO PIECE-->
+	<div id="portfolio-piece">
+	
+	<canvas class="portfolio-img" id="canvas"></canvas>
+	<!--This page has a canvas instead of an image so that the actual game prototype can be displayed on the page-->
+	
+	<div id="back" role="button">
+		<a href="http://kalibwatson.com/index.html"><h2>Back</h2></a>
+	</div>
+	
+		<h1>JavaScript Canvas Game Prototype</h1>
+		
+		<img src="http://kalibwatson.com/images/line.png" alt="#">
+		
+			<div class="center">
+				<p>The Professional Writing major at Michigan State University offers an Advanced Web Authoring course
+				which introduces the syntax and functionality of programming languages like PHP and JavaScript. At the end of this course, each student in my class was asked to come up with a final project that would advance their web authoring skills. I chose to create a JavaScript browser game.</p>
+				<p>I chose creating a browser game for two reasons:</p>
+				<ol>
+					<li>I had tasted a bit of JavaScript through this course, but I knew that it would become an important factor in my web  development journey. I wanted to design a project to force me to learn more about JavaScript without using tutorials. I wanted to write my own code.</li>
+					<li>I love games and have always been interested in breaking down how they function, and I knew that this interest would help me push to better understand and grasp JavaScript concepts and syntax.</li>
+				</ol>
+				<p>This being said, I reached to the moon with my project idea, and truly believed that if I worked every day I could create a fully functional game before the end of the semester. It's worht saying that when I started this project, I had about a month of the semester left, and other projects and exams to finish. You can imagine that I didn't create a fully funcitonal browser game.</p>
+				<p>However, I realized this fairly quickly. I created an ongoing journal to write down my ideas, hangups, and goals as I worked on my game, and as my list of goals grew and grew, I recognized that I was experiencing scope creep. After recognizing this, I went back to the drawing board and decided on things that I felt were accomplishable within the time I had. I ended up with four main goals:</p>
+				<ol>
+					<li>Render a map on the canvas using a tileset (one image of multiple tiles)</li>
+					<li>Render a sprite and make him move using a sprite sheet (one image of multiple sprite animation frames)</li>
+					<li>Move the sprite with the arrow keys</li>
+					<li>Design a collision system based on the map</li>
+				</ol>
+				<p>The first of these goals was definitely the hardest, as I couldn't find any tutorials to build a mapping engine that would select a tile from a tile set and draw that tile to a space on the screen. After reading and practicing with about 10 tutorials and recognizing patterns with tile engines and JavaScript for loops, I was finally able to build the tile engine. After this first breakthrough, the other items on the list were exponentially easier, because I was recognizing JavaScript patterns and learning to properly use syntax and variables.</p>
+				<p>Of course, the prototype is nowhere near the full functionality of a browser game. Currently, I am working to develop a fuller version of this prototype, both for practice, and because the experience of building it has been a lot of fun and very rewarding. I truly enjoy seeing people use the experiences I've built - whether that be a website or a game - and turning around to make them better.</p>
+				<p>If you have questions about this project, or about my work in general, please don't hesitate to contact me!</p>
+			</div>
+			
+		<div class="clear">
+		</div>
+		
+	</div>
+	<!--END PORTFOLIO-->
+	
+	<!--BEGIN FOOTER-->
+	<div id="footer">
+		<div class="table">
+		<ul>
+			<li><a href="https://twitter.com/CuriousWats"><img src="http://kalibwatson.com/images/icons/twittericon.png" 
+			alt="twitter"/></a></li>
+			<li><a href=""><img src="http://kalibwatson.com/images/icons/linkedinicon.png" alt="linkedin"/></a></li>
+		</ul>
+		<p>Copyright &copy; Kalib Watson 2017</p>
+		</div>
+		
+	</div>
+	<!--END FOOTER-->
+	
+</div> 
+<!--CLOSE CONTAINER DIV-->
+<script src="js/engine.js"></script>
+<!--JavaScript-->
+
+</body>
+</html>

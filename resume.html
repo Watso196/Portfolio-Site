@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Kalib Watson's Resume</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+<link rel="icon" type="image/png" href="http://kalibwatson.com/images/kwlogofavicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--BEGIN CONTAINER-->
+<div id="container" aria-hidden="false">
+
+	<!--BEGIN HEADER-->
+	<div id="header">
+		<img src="http://kalibwatson.com/images/kwlogofinal.png" alt="Kalib Watson Logo">
+	</div>
+	<!--END HEADER-->
+
+	<!--BEGIN NAVBAR-->
+	<nav>
+		<ul>
+			<li><a href="/index.html">Portfolio</a></li>
+			<li><a href="/resume.html">Resume</a></li>
+			<li><a href="#contact" id="myBtn">Contact</a></li> <!--ID triggers/opens modal popup-->
+		</ul>
+	</nav>
+	<!--END NAVBAR-->
+
+
+	<!--BEGIN RESUME-->
+	<div id="resume">
+		<div id="resume-content">
+		<h1>Resume</h1>
+
+		<img src="http://kalibwatson.com/images/line.png" alt="#">
+
+		<h3><a href="http://kalibwatson.com/images/resumekrw.pdf" target="_blank">Download the PDF version</a></h3>
+			<div class="left">
+			<h2>Skills</h2>
+			<p>Languages: HTML5, CSS3, JavaScript, jQuery</p>
+			<p>Tools: Github, Photoshop, Illustrator, Atom, Eclipse</p>
+
+			<h2>Education</h2>
+			<p>B.A. in Professional Writing at Michigan State University</p>
+			<p>Additional coursework in web development, document design, visual rhetoric, and rapid
+			prototyping.</p>
+			<p>Expected Graduation: May 2018</p>
+
+			<h2>Projects</h2>
+			<p>Co-author of <a href="https://www.amazon.com/Michigan-State-School-of-Journalism/e/B00I2XQ1FK/ref=sr_ntt_srch_lnk_1?qid=1485721944&sr=1-1">
+			100 Questions and Answers about Gender Identity</a>, 2016</p>
+			<p>Member of the Spartan Web Authoring Team, 2017</p>
+			</div>
+
+			<div class="right">
+			<h2>Experience</h2>
+			<br />
+
+			<h3>Web Development Intern</h3>
+			<p><em>Jackson National | May 15, 2017 – present</em></p>
+			<p>Responsibilities: Assessing Jackson's web accessibility, developing a method and timeline to address potential issues, as well as providing the team tools and knowledge to be successful with web accessibility. Developing public articles and interactions for <a href="https://www.retirementyouwant.com/">Retirement You Want</a> and <a href="https://www.jacksoncharitablefoundation.org/">Jackson Charitable Foundation</a>.</p><br />
+
+			<h3>Web and UI Developer</h3>
+			<p><em>Writing, Information, and Digital Experience | November 6, 2016 – present</em></p>
+			<p>Responsibilities: Development of HTML, CSS, information architecture, user interface, and
+			updating content of Sherlockian.net. Designing and planning migration from static site
+			to Wordpress, and considering usability and SEO from both the curation and public sides of the site.</p><br />
+
+			<h3>Accessibility Intern</h3>
+			<p><em>Usability/Accessibility Research and Consulting | January 9, 2017 – May 11, 2017</em></p>
+			<p>Responsibilities: Evaluation of website accessibility for Michigan State University and
+			external clients using WCAG 2.0 guidelines and Section 508 standards.</p><br />
+
+			</div>
+
+		</div>
+	</div>
+	<!--END RESUME-->
+
+	<!--BEGIN FOOTER-->
+	<div id="footer">
+		<div class="table">
+		<ul>
+			<li><a href="https://twitter.com/CuriousWats"><img src="http://kalibwatson.com/images/icons/twittericon.png"
+			alt="twitter"/></a></li>
+			<li><a href=""><img src="http://kalibwatson.com/images/icons/linkedinicon.png" alt="linkedin"/></a></li>
+		</ul>
+
+		<p>Copyright &copy; Kalib Watson 2017</p>
+
+		</div>
+
+	</div>
+	<!--END FOOTER-->
+
+</div>
+<!--CLOSE CONTAINER DIV-->
+
+<!--BEGIN MODAL POPUP-->
+<!-- The Modal -->
+<div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="contact-header"> <!--Id is here to call JavaScript popup action, not for styling-->
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close"><a href="#">&times;</a></span>
+			<h2 id="contact-header">Contact Me</h2>
+		</div>
+		<div class="modal-body">
+				<!--Contact form-->
+				<form action="mailto:watso196@msu.edu" method="post" enctype="text/plain">
+				<label for="name"><p>Name:</p></label>
+				<input type="text" name="name" id="name"><br />
+				<label for="email"><p>Email:</p></label>
+				<input type="email" name="email" id="email"><br />
+				<label for="message"><p>Message:</p></label>
+				<textarea name="message" id="message"></textarea></label>
+				<br  />
+				<input class="button" type="submit" value="Send">
+				<input class="button" type="reset" value="Reset">
+				</form>
+				<!--End contact form-->
+			</div>
+
+	</div>
+
+</div>
+<!--END MODAL POPUP-->
+
+
+<!--JavaScript-->
+<script src="http://kalibwatson.com/js/pop-up.js"></script> <!--Scripts are included at the bottom of the
+page so they don't effect the content load time-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>
