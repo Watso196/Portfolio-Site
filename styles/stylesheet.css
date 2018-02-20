@@ -1,0 +1,531 @@
+
+/* Font Defining */
+@font-face {
+	font-family: Poetsen;
+	src: url(http://kalibwatson.com/fonts/poetsenone-r.otf);
+	src: url(http://kalibwatson.com/fonts/poetsenone-r.ttf);
+}
+
+/* Global */
+#container {
+	background-image: url(http://kalibwatson.com/images/littlepluses.png);
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+     height:100%;
+     margin:0;
+     padding:0;
+     font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #3b7e87;
+}
+
+a:hover, a:focus {
+	color: #00c6b6;
+}
+
+/* Images */
+img[src="http://kalibwatson.com/images/line.png"] {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	top: -20px;
+	padding: 5px 0px;
+	clear: both;
+}
+
+/*Header Images*/
+img[src="http://kalibwatson.com/images/kwlogofinal.png"] {
+	height: 75px;
+	width: auto;
+	display: block;
+	padding-top: 10px;
+	padding-left: 10px;
+	position: relative;
+	top: 0;
+	left: 10px;
+	z-index: 100;
+}
+
+img[src="http://kalibwatson.com/images/kwbanner.png"] {
+	width: 75%;
+	height: auto;
+	display: inline-block;
+	padding-top: 40px;
+	top: 225px;
+	position: relative;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+/*End Header Image*/
+/* End Images */
+
+/*Nav bar*/
+nav {
+    width: 100%;
+    background: #3b7e87;
+    left: 0;
+    right: 0;
+    top: 5px;
+    position: relative;
+    z-index: 99;
+    height: 55px;
+    box-shadow: 0px 2px 2px rgba(0,0,0, .4);
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 55px;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 23%; /* fallback for non-calc() browsers */
+    width: calc(100% / 4.5);
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: Poetsen;
+    font-size: 1.3em;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+nav ul li a:hover, ul#nav li a:focus {
+	background-color: #00c6b6;
+	width: 100%;
+	height: 35px;
+	display: block;
+	color: white;
+}
+/*End Nav Bar*/
+
+/*Fonts*/
+h1 {
+	font-family: Poetsen, Helvetica;
+	font-size: 2.4em;
+}
+
+h2 {
+	font-family: Poetsen, Helvetica;
+	font-size: 1.8em;
+}
+
+h3 {
+	font-family: Arial, Helvetica Neue;
+	font-size: 1.3em;
+	font-style: bold;
+}
+
+p, ol, ul, label {
+	font-family: arial, Helvetica Neue;
+	font-size: 1.125em;
+}
+
+/*End Fonts*/
+
+/*Footer*/
+#footer {
+	width: 100%;
+	overflow: hidden;
+    background: #00c6b6;
+    left: 0;
+    bottom: 0;
+    position: auto;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#footer ul {
+	list-style: none;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+#footer ul li {
+	float: left;
+}
+
+#footer p {
+	position: relative;
+	float: right;
+	bottom: -10px;
+	right: 10px;
+	font-size: 1em;
+}
+
+img[src*="icon.png"] {
+	display: block;
+	box-sizing: border-box;
+}
+
+/*Twitter Icon*/
+img[src="http://kalibwatson.com/images/icons/twittericon.png"] {
+	height: 60px;
+	width: 60px;
+	position: relative;
+	bottom: -4.5px;
+}
+
+/*LinkedIn Icon*/
+img[src="http://kalibwatson.com/images/icons/linkedinicon.png"] {
+	height: 54px;
+	width: 54px;
+	position: relative;
+	bottom: -7.5px;
+}
+/*End Footer*/
+
+/*Portfolio*/
+#portfolio {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+#portfolio-content {
+	height: auto;
+	padding-top: 15px;
+}
+
+/*Portfolio Images*/
+#portfolio img {
+	width: 45%;
+	height: auto;
+	min-width: 350px;
+}
+/*End Portfolio Images*/
+
+#portfolio h1 {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	padding: 0;
+}
+
+/*Portfolio and Resume Display*/
+.left {
+	float: left;
+	width: 45%;
+	height: auto;
+	margin: 15px 15px 17px 20px;
+	overflow: hidden;
+	min-width: 300px;
+}
+
+.right {
+	float: right;
+	width: 45%;
+	height: auto;
+	margin: 15px 35px 15px 15px;
+	overflow: hidden;
+	min-width: 300px;
+}
+
+.right>h2, .right>p {
+	margin-right: 35px;
+}
+
+.left>h2, .left>p {
+	margin-left: 50px;
+}
+
+.clear {
+	clear: both;
+	padding: 5px;
+}
+/*End Portfolio Pieces*/
+/*End Portfolio*/
+
+/*Resume*/
+#resume, #about {
+	width: 100%
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+#resume-content, #about-content {
+	height: auto;
+	padding-top: 15px;
+}
+
+/*Resume Fonts*/
+#resume h1, #about h1 {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+}
+
+#resume h3 {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	top: -20px;
+}
+
+#resume img {
+	width: 45%;
+	height: auto;
+	min-width: 320px;
+}
+/*End Resume Fonts*/
+/*End Resume*/
+
+
+
+/*Popup Modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    width: 60%;
+    min-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+		border: 2px solid #3b7e87;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #00c6b6;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: block;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	display: block;
+	text-align: center;
+}
+
+/*Form*/
+form {
+	display: block;
+	position: relative;
+	margin: auto;
+	left: 15px;
+	padding-bottom: 10px;
+
+}
+
+
+
+input[type=text], input[type=email] {
+	border-radius: 4px;
+	width: 50%;
+	padding: 5px;
+	font-size: 1.125em;
+}
+input[type=text]:focus, input[type=email]:focus {
+	border: 3px solid #555;
+}
+
+textarea {
+	height: 100px;
+	width: 50%;
+	font-size: 14px;
+	font-family: Arial, Helvetica Neue;
+}
+
+input[type=submit],
+input[type=reset] {
+	font-family: arial, Helvetica Neue;
+	font-size: 1.125em;
+	background-color: #fff;
+	border-radius: 3px;
+	width: auto;
+	padding: 5px;
+	border: 2px solid #3b7e87;
+	text-align: center;
+}
+/*End Popup Modal*/
+
+
+/*Portfolio Piece Pages*/
+#back {
+	width: 100px;
+	height: 60px;
+	position: fixed;
+	top: 15px;
+	left: 25px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 2px solid #595959;
+	background-color: #fff;
+}
+
+#back a {
+	display: block;
+	padding: 5px 2px;
+	position: relative;
+	margin: auto;
+	bottom: 20px;
+}
+
+#portfolio-piece {
+	height: 100%;
+	width: 100%;
+}
+
+#portfolio-piece h1 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.center {
+	height: auto;
+	width: 60%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.portfolio-img {
+	width: 60%;
+	height: auto;
+	display: block;
+	padding-top: 25px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#canvas {
+	width: 40%;
+}
+/*End Portfolio Piece Pages*/
+
+/*Begin Viewport Media Queries*/
+@media only screen and (max-width: 850px) {
+
+	img[src="http://kalibwatson.com/images/line.png"] {
+		width: 90%;
+		top: -15px;
+	}
+
+	img[src="http://kalibwatson.com/images/kwlogofinal.png"] {
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+
+	img[src="http://kalibwatson.com/images/kwbanner.png"] {
+		width: 80%;
+		padding-top: 8px;
+		top: 150px;
+	}
+
+	#portfolio img {
+		width: 85%;
+	}
+
+	.right {
+		float: none;
+		height: auto;
+		margin: 10px 10px 10px 15px;
+		min-width: 300px;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+	img[src="http://kalibwatson.com/images/kwbanner.png"] {
+		width: 80%;
+		padding-top: 8px;
+		top: 80px;
+	}
+
+	img[src="http://kalibwatson.com/images/kwlogofinal.png"] {
+		height: 40px;
+	}
+
+}
+
+/*End Viewport Media Queries*/
